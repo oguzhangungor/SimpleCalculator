@@ -78,11 +78,12 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Result: "
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:id="@+id/txtResult"
+        android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@+id/LinearLayoutBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
         if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Plase No  Empty Box");
+            resultText.setText("Enter Number Please No Empty Box");
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
         if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Plase No  Empty Box");
+            resultText.setText("Enter Number Please No Empty Box");
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
         if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Plase No  Empty Box");
+            resultText.setText("Enter Number Please No Empty Box");
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
         if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Plase No  Empty Box");
+            resultText.setText("Enter Number Please No Empty Box");
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
