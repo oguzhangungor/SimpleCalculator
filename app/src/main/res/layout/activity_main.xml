@@ -20,7 +20,8 @@
             android:id="@+id/number1Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Number">
+            android:hint="Enter Number"
+            android:singleLine="true">
 
         </EditText>
 
@@ -29,7 +30,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Enter number">
+            android:hint="Enter number"
+            android:singleLine="true">
+
 
         </EditText>
     </LinearLayout>

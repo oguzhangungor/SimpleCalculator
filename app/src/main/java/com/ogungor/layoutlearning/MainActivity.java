@@ -28,11 +28,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public boolean control() {
+
+        if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
+            resultText.setText("Enter Number Please No Empty Box");
+            return true;
+
+        }
+        return false;
+    }
     public void sum(View view) {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
-        if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Please No Empty Box");
+        if (control()){
+
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
@@ -41,11 +50,13 @@ public class MainActivity extends AppCompatActivity {
             resultText.setText("Result: " + result);
         }
     }
+
+
     public void deduct(View view) {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
-        if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Please No Empty Box");
+        if (control()){
+
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
@@ -57,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
     public void multiply(View view) {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
-        if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Please No Empty Box");
+        if (control()){
+
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
@@ -70,8 +81,12 @@ public class MainActivity extends AppCompatActivity {
     public void devide(View view) {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(number2Txt.getWindowToken(), 0);
-        if (number1Txt.getText().toString().matches("") || number2Txt.getText().toString().matches("")) {
-            resultText.setText("Enter Number Please No Empty Box");
+        if (control()){
+
+        }
+        else if (number2Txt.getText().toString().matches("0"))
+        {
+            resultText.setText("Not zero Number 2");
         }
         else {
             number1 = Integer.parseInt(number1Txt.getText().toString());
