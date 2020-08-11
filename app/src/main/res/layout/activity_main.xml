@@ -43,7 +43,6 @@
         android:id="@+id/LinearLayoutBtn"
         >
 
-
         <Button
             android:id="@+id/btnSum"
             android:layout_width="wrap_content"
@@ -82,11 +81,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Result: "
+        android:textSize="25sp"
         android:id="@+id/txtResult"
         app:layout_constraintTop_toBottomOf="@+id/LinearLayoutBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="25dp"
+        >
 
-        ></TextView>
+    </TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>
