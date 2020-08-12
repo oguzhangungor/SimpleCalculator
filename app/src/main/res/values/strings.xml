@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Simple Calculator</string>
+    <string name="text_zero_error">Number to Not Zero</string>
+    <string name="text_not_empty_error">Enter Number Please No Empty Box</string>
+    <string name="text_result">Result: %.2f </string>
 </resources>

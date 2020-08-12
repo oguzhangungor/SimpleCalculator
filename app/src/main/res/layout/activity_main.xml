@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Number"
+            android:inputType="number"
             android:singleLine="true">
 
         </EditText>
@@ -31,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="Enter number"
+            android:inputType="number"
             android:singleLine="true">
 
 
@@ -51,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:onClick="sum"
+            android:onClick="process"
             android:text="+" />
 
         <Button
@@ -59,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:onClick="deduct"
+            android:onClick="process"
             android:text="-"
             />
         <Button
@@ -67,15 +69,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:onClick="multiply"
+            android:onClick="process"
             android:text="*"
             />
         <Button
-            android:id="@+id/btndevide"
+            android:id="@+id/btnDivide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:onClick="devide"
+            android:onClick="process"
             android:text="/"
             />
     </LinearLayout>
